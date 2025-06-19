@@ -43,8 +43,12 @@ public class AsteriskRegistrationService {
         endpoint.setAuth(username + "-auth");
         endpoint.setContext("default");
         endpoint.setDisallow("all");
-        endpoint.setAllow("ulaw");
+        endpoint.setAllow("ulaw,alaw,h264,vp8");
         endpoint.setDirectMedia("no");
+        endpoint.setMaxVideoStreams(1);
+        endpoint.setRtpSymmetric("yes");
+        endpoint.setForceRport("yes");
+        endpoint.setRewriteContact("yes");
         endpointRepository.save(endpoint);
     }
 }

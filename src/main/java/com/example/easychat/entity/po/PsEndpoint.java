@@ -21,4 +21,12 @@ public class PsEndpoint {
     private String allow;
     @Column(name = "direct_media")
     private String directMedia;
+    @Column(name = "max_video_streams")
+    private Integer maxVideoStreams;
+    @Column(name = "rtp_symmetric")
+    private String rtpSymmetric;
+    @Column(name = "force_rport")
+    private String forceRport;
+    @Column(name = "rewrite_contact")
+    private String rewriteContact;
 }

@@ -33,7 +33,7 @@ public class AsteriskRegistrationService {
 
         PsAor aor = new PsAor();
         aor.setId(username);
-        aor.setMaxContacts(10);
+        aor.setMaxContacts(1);
         aorRepository.save(aor);
 
         PsEndpoint endpoint = new PsEndpoint();
